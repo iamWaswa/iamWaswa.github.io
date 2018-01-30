@@ -24,7 +24,7 @@ img {
 html,
 body {
     margin: 0;
-    padding: 1em;
+    padding: 0;
     color: white;
     height: 100vh;
     background: black;
