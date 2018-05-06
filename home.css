@@ -201,12 +201,6 @@ body {
     width: 100%;
 }
 
-.page--resume {
-    align-self: flex-end;
-    width: auto;
-    margin-bottom: 9em;
-}
-
 .page__my-picture {
     position: absolute;
     min-width: 200px;
@@ -246,6 +240,7 @@ body {
 
 .page__my-info {
     width: 100%;
+    margin-top: 13em;
     height: auto;
     padding: 1em;
     background-color: white;
