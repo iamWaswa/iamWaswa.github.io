@@ -124,9 +124,10 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     grid-row-gap: 1em;
     grid-template-areas:
+        "studyspace"
         "calculator"
         "wikipedia"
         "weather"
@@ -141,9 +142,9 @@
         grid-template-rows: repeat(3, auto);
         grid-column-gap: 1em;
         grid-template-areas : 
-            "calculator calculator wikipedia wikipedia" 
-            "weather weather color color" 
-            ". todo todo .";
+            "studyspace studyspace calculator calculator" 
+            "wikipedia wikipedia weather weather" 
+            "color color todo todo";
     }
 
 }
@@ -154,8 +155,8 @@
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, auto);
         grid-template-areas : 
-            "calculator calculator wikipedia wikipedia weather weather" 
-            ". color color todo todo .";
+            "studyspace studyspace calculator calculator wikipedia wikipedia" 
+            "weather weather color color todo todo";
     }
 
 }
@@ -165,22 +166,26 @@
 }
 
 .page__portfolio-item:nth-of-type(1) {
-    grid-area: calculator;
+    grid-area: studyspace;
 }
 
 .page__portfolio-item:nth-of-type(2) {
-    grid-area: wikipedia;
+    grid-area: calculator;
 }
 
 .page__portfolio-item:nth-of-type(3) {
-    grid-area: weather;
+    grid-area: wikipedia;
 }
 
 .page__portfolio-item:nth-of-type(4) {
-    grid-area: color;
+    grid-area: weather;
 }
 
 .page__portfolio-item:nth-of-type(5) {
+    grid-area: color;
+}
+
+.page__portfolio-item:nth-of-type(6) {
     grid-area: todo;
 }
 
