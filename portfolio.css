@@ -131,7 +131,7 @@
         "calculator"
         "wikipedia"
         "weather"
-        "color"
+        "colorpage"
         "todo";
 }
 
@@ -144,7 +144,7 @@
         grid-template-areas : 
             "studyspace studyspace calculator calculator" 
             "wikipedia wikipedia weather weather" 
-            "color color todo todo";
+            "colorpage colorpage todo todo";
     }
 
 }
@@ -156,7 +156,7 @@
         grid-template-rows: repeat(2, auto);
         grid-template-areas : 
             "studyspace studyspace calculator calculator wikipedia wikipedia" 
-            "weather weather color color todo todo";
+            "weather weather colorpage colorpage todo todo";
     }
 
 }
@@ -182,7 +182,7 @@
 }
 
 .page__portfolio-item:nth-of-type(5) {
-    grid-area: color;
+    grid-area: colorpage;
 }
 
 .page__portfolio-item:nth-of-type(6) {
