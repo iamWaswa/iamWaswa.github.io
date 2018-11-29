@@ -125,7 +125,7 @@ body {
 @media screen and (min-width: 62rem){
 
     .page--card {
-        height: 6rem;
+        height: 8rem;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         grid-column-gap: 1em;

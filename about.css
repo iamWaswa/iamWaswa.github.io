@@ -71,12 +71,9 @@
         "html"
         "css"
         "javascript"
-        "jquery"
+        "react"
         "sass"
-        "git"
-        "android"
-        "java"
-        "c";
+        "git";
 }
 
 @media screen and (min-width: 38rem) {
@@ -88,23 +85,20 @@
         grid-template-areas : 
             ". . technical . ." 
             "html html . css css" 
-            "javascript javascript . jquery jquery" 
-            "sass sass . git git" 
-            "android android . java java" 
-            ". . c . .";
+            "javascript javascript . react react" 
+            "sass sass . git git";
     }
 }
 
 @media screen and (min-width: 64rem){
 
     .page__skills {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr repeat(3, 2fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr repeat(2, 2fr);
         grid-template-areas : 
-            ". technical technical ." 
-            "html css javascript jquery" 
-            "sass git android java" 
-            ". c c .";
+            ". technical ." 
+            "html css javascript" 
+            "react sass git";
     }
 
 }
@@ -134,7 +128,7 @@
 }
 
 .page__single-skill:nth-of-type(4) {
-    grid-area: jquery;
+    grid-area: react;
 }
 
 .page__single-skill:nth-of-type(5) {
@@ -143,18 +137,6 @@
 
 .page__single-skill:nth-of-type(6) {
     grid-area: git;
-}
-
-.page__single-skill:nth-of-type(7) {
-    grid-area: android;
-}
-
-.page__single-skill:nth-of-type(8) {
-    grid-area: java;
-}
-
-.page__single-skill:nth-of-type(9) {
-    grid-area: c;
 }
 
 .page__language {
@@ -198,16 +180,8 @@
     background-image: url("images/javascript.svg");
 }
 
-.page--jquery {
-    background-image: url("images/jquery.svg");
-}
-
-.page--java {
-    background-image: url("images/java.svg");
-}
-
-.page--cplusplus {
-    background-image: url("images/c++.svg");
+.page--react {
+    background-image: url("images/react.svg");
 }
 
 .page--sass {
@@ -216,10 +190,6 @@
 
 .page--git {
     background-image: url("images/git.svg");
-}
-
-.page--android {
-    background-image: url("images/android.svg");
 }
 
 .page__single-skill .page__paragraph {
